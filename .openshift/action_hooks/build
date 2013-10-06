@@ -1,0 +1,11 @@
+#!/bin/bash
+
+pushd $OPENSHIFT_REPO_DIR
+
+#Make sure that meteor will bind to the correct IP address:
+sed -i 's/   app.listen(port, function() {/   app.listen(port, process.env.IP, function() {/' server/server.js
+
+#Bootstrap our app configuration using a custom main.js
+cp -f .openshift/template/main.js main.js
+
+popd

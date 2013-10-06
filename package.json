@@ -1,0 +1,35 @@
+{
+  "name": "OpenShift-Nodejs-Cartridge",
+  "version": "1.1.0",
+  "description": "Node.js Cartridge for OpenShift",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
+  "author": {
+    "name": "OpenShift",
+    "email": "ryanj@redhat.com",
+    "url":  "http://openshift.com/"
+  },
+  "homepage": "http://openshift.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://gitub.com/openshift-quickstart/openshift-meteorjs-quickstart.git"
+  },
+  "engines": {
+    "node": ">= 0.10.9",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "fibers": "~1.0.0"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+  "private": true,
+  "scripts": {
+    "start": "node main.js"
+  },
+  "main": "main.js"
+}
